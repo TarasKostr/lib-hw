@@ -2,10 +2,9 @@
   "name": "lib-hw",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /parceltoo/",
+    "build": "parcel build src/index.html --public-url /lib-hw/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -21,9 +20,11 @@
   },
   "homepage": "https://github.com/TarasKostr/lib-hw#readme",
   "dependencies": {
-    "chart.js": "^4.5.1"
+    "chart.js": "^4.5.1",
+    "parcel": "^2.16.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "pnotify": "^5.2.0"
   }
 }
